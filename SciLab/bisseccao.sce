@@ -39,20 +39,20 @@ function []=bisseccao(xl, xu, es, imax)
         end
   end
 endfunction
+
 //main
 
-mprintf("Este programa encontra uma raiz aproximada de f(x) = x*log(x-1)\n")
+mprintf(" \n Aluna: Arthur Orsolin \n");
+mprintf(" \n");
+mprintf("Este programa encontra uma raiz aproximada de f(x) = x*log(x) - 1 no intervalo [2, 3], com tolerância de 0.00001\n")
 mprintf("\nUma equação não linear usando o método da Bissecção\n")
     
-    f = "x*log(x-1)" // -------->>>>>>>>>>FUNÇÃO <<<<<<<<<<<<<<<<<<<
-    xl = input("Digite o limite inferior: ")
+    f = "x*log10(x) - 1" // -------->>>>>>>>>>FUNÇÃO <<<<<<<<<<<<<<<<<<<
+    xl = 2 // ---------->>>>>LIMITE INFERIOR<<<<<<<<<<<<<<
     x = xl
     fl = evstr(f)
-        if(fl==0)then
-            mprintf("limite inferior é a raiz. ");
-           abort
-        end
-xu = input("Digite o limite Superior: ")
+        
+xu = 3 //---------->>>>>>LIMITE SUPERIOR<<<<<<<<<<<
 x = xu
 fu = evstr(f)
         if(fu == 0)then
@@ -60,13 +60,8 @@ fu = evstr(f)
            abort
           end
             
-b = fl*fu;
-        if(b>0)then
-            mprintf("Entradas Invalidas. f(a) * f(b) devem ser menor que zero. ")
-           abort
-        end
-es = input("insira o valor da tolerância aceita de erro: ")
-imax = input("Número máximo de iterações: ");
+es = 10^-5 //---------->>>>>>TOLERÂNCIA<<<<<<<<<<
+imax = 100 //--------->>>>>>Nº MÁXIMO DE ITERAÇÕES<<<<<<<<
 iter = 1
             mprintf("     Iter               a                   b                      Xk                       f(Xk)                        (b - a)\n"); //para saída na tabela
     bisseccao(xl, xu, es, imax)
