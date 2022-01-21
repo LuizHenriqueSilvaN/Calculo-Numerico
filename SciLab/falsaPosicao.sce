@@ -1,7 +1,6 @@
+clear;
+clc
 
-
-mprintf(" \n Aluno: Arthur Orsolin \n");
-mprintf(" \n");
 mprintf("Este programa encontra uma raiz aproximada de f(x) = x^3 - x - 1 no intervalo (1,2), com tolerância de 10^-4\n")
 mprintf("\nMétodo da Posição Falsa\n")
 // Definição da função f(x)

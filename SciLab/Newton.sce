@@ -1,7 +1,6 @@
 clear;
 clc;
-mprintf(" \n Aluno: Arthur Orsolin \n");
-mprintf(" \n");
+
 mprintf("Este programa encontra uma raiz aproximada de f(x) = x*ln(x) - 1 no intervalo (1,2), com tolerância de 10^-7\n")
 mprintf("\nMétodo de Newton\n")
 // Definição da função f(x)

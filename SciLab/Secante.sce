@@ -1,7 +1,6 @@
 clear;
 clc;
-mprintf(" \n Aluno: Arthur Orsolin \n");
-mprintf(" \n");
+
 mprintf("Este programa encontra uma raiz aproximada de f(x) = 4*sin(x) - exp(x) no intervalo (0,2), com tolerância de 10^-5\n")
 mprintf("\nMétodo da Secante\n")
 // Definição da função f(x)
