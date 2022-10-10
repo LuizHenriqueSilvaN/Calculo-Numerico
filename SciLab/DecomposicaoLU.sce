@@ -1,5 +1,5 @@
 clear;clc;
-mprintf(" \n Aluno: Arthur Orsolin \n");
+
 mprintf(" \n");
 mprintf("Este programa calcula a decomposição em LU de uma matrix 3x3 não singular \n")
 mprintf("Ax = b \n\n")
