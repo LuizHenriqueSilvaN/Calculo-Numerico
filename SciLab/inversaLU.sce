@@ -1,5 +1,5 @@
 clear;clc;
-mprintf(" \n Aluno: Arthur Orsolin \n");
+
 mprintf(" \n");
 mprintf("Este programa retorna a inversa de uma matrix 3x3 não singular através do método LU \n")
 mprintf("A*A^(-1) = I \n\n")
